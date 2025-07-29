@@ -31,6 +31,18 @@ while True:
     if guess == secret:
         print(f'Congratulations! You guessed it in {attempts} attempts.') 
         break
+    
+    
+    hint = ""
+    
+    for i in range(len(secret)):
+        if i < len(guess) and guess[i] == secret[i]:
+            hint += guess[i]
+        else:
+            hint += "_"
+            
+    print("Hint: ", hint)
+print("Game Over! The secret password was:", secret)            
       
     
     
