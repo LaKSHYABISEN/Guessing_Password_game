@@ -22,7 +22,7 @@ else:
     secret = random.choice(easy_word)
     
 attempts = 0
-print("\Guess the secret password")
+print("\nGuess the secret password")
 
 while True:
     guess =input("enter your guess: ").lower() 
