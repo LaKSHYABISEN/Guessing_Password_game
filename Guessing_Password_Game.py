@@ -21,6 +21,18 @@ else:
     print("Invalid choice. Defaulting to easy level")
     secret = random.choice(easy_word)
     
+attempts = 0
+print("\Guess the secret password")
+
+while True:
+    guess =input("enter your guess: ").lower() 
+    attempts += 1
+    
+    if guess == secret:
+        print(f'Congratulations! You guessed it in {attempts} attempts.') 
+        break
+      
+    
     
                 
     
